@@ -81,8 +81,7 @@ public class RestaurantControllerTest {
 
     @Test
     public void create() throws Exception {
-        Restaurant restaurant = new Restaurant(1234L,"BeRyong","Seoul");
-
+        //Restaurant restaurant = new Restaurant(1234L,"BeRyong","Seoul");
         mvc.perform(post("/restaurants")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content("{\"name\":\"Beryong\",\"address\":\"Busan\"}"))
